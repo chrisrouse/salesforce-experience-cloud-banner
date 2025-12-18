@@ -22,7 +22,8 @@
       "id": "salesforce-experience-cloud-banner@chrisrouse.dev",
       "strict_min_version": "134.0",
       "data_collection_permissions": {
-        "builtin_data_consent": false
+        "required": [],
+        "optional": []
       }
     }
   },
