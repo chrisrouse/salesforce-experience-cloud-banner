@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Experience Cloud Banner Settings</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Experience Cloud Banner Settings</h1>
+
+    <div class="setting-group">
+      <label for="sandboxColor">Sandbox Color</label>
+      <div class="color-input-group">
+        <input type="text" id="sandboxColor" value="#00a1e0" placeholder="#00a1e0" maxlength="7">
+        <span class="color-preview" id="sandboxPreview">T</span>
+      </div>
+    </div>
+
+    <div class="setting-group">
+      <label for="productionColor">Production Color</label>
+      <div class="color-input-group">
+        <input type="text" id="productionColor" value="#c23934" placeholder="#c23934" maxlength="7">
+        <span class="color-preview" id="productionPreview">T</span>
+      </div>
+    </div>
+
+    <div class="setting-group">
+      <label for="showOrgName">
+        <input type="checkbox" id="showOrgName">
+        Show org name in banner
+      </label>
+    </div>
+
+    <button id="resetButton" class="reset-icon" title="Restore defaults">↻</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

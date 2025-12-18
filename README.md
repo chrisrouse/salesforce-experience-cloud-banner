@@ -1,0 +1,3 @@
+Add a banner to Salesforce Experience Cloud Builder so that you always know which environment you're working in. Has options to set your own color for the banner. There is also an option to show just "Sandbox" or "Production" or to show your org name, which can be useful if you're a consultant working on multiple projects or you work in multiple sandboxes.
+
+Available for Chome and Firefox. Can be installed in other browsers like Edge by installing it from the Chrome extensions store.

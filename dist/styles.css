@@ -1,0 +1,79 @@
+/* Salesforce Environment Banner - SLDS Alert Style */
+
+.sf-env-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1rem;
+  font-family: 'Salesforce Sans', Arial, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.sf-env-banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.sf-env-banner-text {
+  letter-spacing: 0.025rem;
+}
+
+/* Environment colors are set dynamically via JavaScript based on user settings */
+.sf-env-banner-production,
+.sf-env-banner-sandbox {
+  color: #ffffff;
+}
+
+
+/* Adjust body padding to account for fixed banner */
+body {
+  padding-top: 45px !important;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .sf-env-banner {
+    font-size: 0.8125rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .sf-env-banner-icon {
+    font-size: 1rem;
+  }
+
+  .sf-env-banner-content {
+    gap: 0.375rem;
+  }
+
+  body {
+    padding-top: 50px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .sf-env-banner-text {
+    font-size: 0.75rem;
+  }
+}
