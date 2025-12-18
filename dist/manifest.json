@@ -1,8 +1,12 @@
 {
   "manifest_version": 3,
   "name": "Salesforce Experience Cloud Banner",
+  "short_name": "SF EC Banner",
   "version": "1.0.0",
   "description": "Displays a prominent banner in Salesforce Experience Cloud site builder to indicate the current environment (Sandbox vs Production)",
+  "author": "Chris Rouse",
+  "homepage_url": "https://github.com/chrisrouse/salesforce-experience-cloud-banner",
+  "minimum_chrome_version": "134",
   "permissions": ["storage", "tabs"],
   "action": {
     "default_popup": "popup.html",
@@ -16,7 +20,7 @@
   "browser_specific_settings": {
     "gecko": {
       "id": "salesforce-experience-cloud-banner@chrisrouse.dev",
-      "strict_min_version": "109.0"
+      "strict_min_version": "134.0"
     }
   },
   "content_scripts": [
